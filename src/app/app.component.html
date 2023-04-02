@@ -1,4 +1,10 @@
-<input type="text" (keyup)="changeImage($event)" />
+<input type="text" (keyup)="setTodo($event)" [value]="todo" />
+<button (click)="addTodo()">Add</button>
 
-<app-post [postImg]="imgURL"> </app-post>
-<p>Hello {{ name }}</p>
+<ul>
+  <li *ngFor="let todo of todos">
+    {{ todo }}
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

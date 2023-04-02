@@ -1,4 +1,38 @@
-input{
+/* styles for a basic todo list with input button and a ul   */
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li {
   display: block;
-  margin: 10px 0;
+  color: #000;
+  padding: 12px 20px;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  margin: 5px;
 }
